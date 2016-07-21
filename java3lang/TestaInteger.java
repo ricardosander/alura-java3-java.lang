@@ -18,5 +18,8 @@ public class TestaInteger {
 		} else {
 			System.out.println("São diferentes");
 		}
+		
+		System.out.println(Integer.parseInt("123"));
+//		System.out.println(Integer.parseInt("1b"));//java.lang.NumberFormatException
 	}
 }
