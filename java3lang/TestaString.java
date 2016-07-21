@@ -9,7 +9,7 @@ public class TestaString {
          
          s = s.replaceAll("1", "2");
          System.out.println(s);
-         
+
          System.out.println("Sem espaços " + s.trim());
          System.out.println(s + " contém fj? " + s.contains("fj"));
          System.out.println(s + " contém gj? " + s.contains("gj"));
