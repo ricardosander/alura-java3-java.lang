@@ -19,6 +19,8 @@ public class TestaString {
          TestaString.imprimeReverso("Alura");
          TestaString.imprimeReverso("Socorram-me, subi no ônibus em Marrocos");
          TestaString.imprimeReverso("anotaram a data da maratona");
+         
+         TestaString.inverteOrdemPalavras("Socorram-me, subi no ônibus em Marrocos");
      }
 	 
 	 public static void imprimeReverso(String palavra) {
@@ -29,5 +31,13 @@ public class TestaString {
         	 System.out.print(palavra.charAt(i));
          }
          System.out.println("\n");
+	 }
+	 
+	 public static void inverteOrdemPalavras(String palavra) {
+		 
+		 String[] palavras = palavra.split(" ");
+		 for (int  i = palavras.length - 1; i >= 0; i--) {
+			 System.out.print(palavras[i] + " ");
+		 }
 	 }
 }
