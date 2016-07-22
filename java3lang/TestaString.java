@@ -16,19 +16,18 @@ public class TestaString {
          System.out.println("Está vazia? " + s.isEmpty());
          System.out.println("Quantos caracteres? " + s.length());
          
-         String palavra = "Alura";
-         for (int i = palavra.length() - 1; i >= 0; i--) {
-        	 System.out.print(palavra.charAt(i));
-         }
-         System.out.println();
-         palavra = "Socorram-me, subi no ônibus em Marrocos";
-         for (int i = palavra.length() - 1; i >= 0; i--) {
-        	 System.out.print(palavra.charAt(i));
-         }
-         System.out.println();
-         palavra = "anotaram a data da maratona";
-         for (int i = palavra.length() - 1; i >= 0; i--) {
-        	 System.out.print(palavra.charAt(i));
-         }
+         TestaString.imprimeReverso("Alura");
+         TestaString.imprimeReverso("Socorram-me, subi no ônibus em Marrocos");
+         TestaString.imprimeReverso("anotaram a data da maratona");
      }
+	 
+	 public static void imprimeReverso(String palavra) {
+		 
+		 System.out.println("String na ordem certa: " + palavra);
+		 System.out.print("String invertida: ");
+         for (int i = palavra.length() - 1; i >= 0; i--) {
+        	 System.out.print(palavra.charAt(i));
+         }
+         System.out.println("\n");
+	 }
 }
