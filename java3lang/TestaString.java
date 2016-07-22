@@ -21,6 +21,11 @@ public class TestaString {
          TestaString.imprimeReverso("anotaram a data da maratona");
          
          TestaString.inverteOrdemPalavras("Socorram-me, subi no ônibus em Marrocos");
+         
+         TestaString.converteStringNumero("2");
+         TestaString.converteStringNumero("21");
+         TestaString.converteStringNumero("123");
+         TestaString.converteStringNumero("425");
      }
 	 
 	 public static void imprimeReverso(String palavra) {
@@ -38,5 +43,15 @@ public class TestaString {
 		 for (int  i = palavras.length - 1; i >= 0; i--) {
 			 System.out.print(palavras[i] + " ");
 		 }
+	 }
+	 
+	 public static void converteStringNumero(String numero) {
+		 
+		 int numeroConvertido = 0;
+		 for (int i = 0; i < numero.length(); i++) {
+			 numeroConvertido += (numero.charAt(numero.length() - i - 1) - '0') * (int) Math.pow(10, i);
+		 }
+		 System.out.println("Número original: " + numero);
+		 System.out.println("Número convertido: " + numeroConvertido);
 	 }
 }
