@@ -17,8 +17,18 @@ public class TestaString {
          System.out.println("Quantos caracteres? " + s.length());
          
          String palavra = "Alura";
-         for (int i = 0; i < palavra.length(); i++) {
-        	 System.out.println(palavra.charAt(i));
+         for (int i = palavra.length() - 1; i >= 0; i--) {
+        	 System.out.print(palavra.charAt(i));
+         }
+         System.out.println();
+         palavra = "Socorram-me, subi no ônibus em Marrocos";
+         for (int i = palavra.length() - 1; i >= 0; i--) {
+        	 System.out.print(palavra.charAt(i));
+         }
+         System.out.println();
+         palavra = "anotaram a data da maratona";
+         for (int i = palavra.length() - 1; i >= 0; i--) {
+        	 System.out.print(palavra.charAt(i));
          }
      }
 }
