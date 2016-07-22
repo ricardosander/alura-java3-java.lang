@@ -25,11 +25,10 @@ public class TestaString {
 	 
 	 public static void imprimeReverso(String palavra) {
 		 
+		 StringBuilder stringBuilder = new StringBuilder(palavra);
+		 
 		 System.out.println("String na ordem certa: " + palavra);
-		 System.out.print("String invertida: ");
-         for (int i = palavra.length() - 1; i >= 0; i--) {
-        	 System.out.print(palavra.charAt(i));
-         }
+		 System.out.println("String invertida: " + stringBuilder.reverse());
          System.out.println("\n");
 	 }
 	 
