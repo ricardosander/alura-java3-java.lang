@@ -15,5 +15,10 @@ public class TestaString {
          System.out.println(s + " contém gj? " + s.contains("gj"));
          System.out.println("Está vazia? " + s.isEmpty());
          System.out.println("Quantos caracteres? " + s.length());
+         
+         String palavra = "Alura";
+         for (int i = 0; i < palavra.length(); i++) {
+        	 System.out.println(palavra.charAt(i));
+         }
      }
 }
